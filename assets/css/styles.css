@@ -72,6 +72,21 @@ a, button {
 .items-center {
     align-items: center;
 }
+.content-center {
+    justify-content: center;
+}
+.content-between {
+    justify-content: space-between;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-white {
+    color: var(--vary-light-gray);
+}
 .align-center {
     text-align: center;
 }
@@ -197,6 +212,46 @@ header {
 }
 
 .testimonial-btn .btn {
-    margin: 30px auto 0;
+    margin: 40px auto 0;
     display: block;
+}
+
+/* Call to action */
+.call-to-action {
+    background-color:  var(--bright-red);
+    background-image: url('/assets/images/bg-simplify-section-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+/* Footer */
+.footer-wrapper {
+    background-color: var(--very-dark-blue);
+    padding: 50px 0;
+}
+.footer-row {
+    gap: 30px;
+    
+}
+
+.footer-logo {
+    margin-bottom: 60px;
+}
+.footer-menu li a {
+    color: white;
+    padding: 8px 0;
+    display: block;
+}
+
+/* input[type="email"] {
+} */
+.subscription {
+    padding: 12px;
+    border: 0;
+    border-radius: 30px;
+    margin: 0 6px 60px 0;
+}
+.subscription:focus {
+    outline: none;
 }
