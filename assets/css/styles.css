@@ -15,13 +15,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    overflow-x: hidden;
+}
 
 body {
     font-size: 16px;
     font-family: 'Be Vietnam Pro', sans-serif;
     background-color: #fff;
     color: var(--dark-grayish-blue);
-    overflow-x: hidden;
+    position: relative;
 }
 ul, ol {
     list-style: none;
@@ -42,6 +45,9 @@ a:hover {/* pseudo selector */
 }
 a, button {
     transition: all 0.3s ease-in-out;
+}
+img {
+    width: 100%;
 }
 
 .btn {
@@ -255,3 +261,148 @@ header {
 .subscription:focus {
     outline: none;
 }
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+ @media (min-width: 1400px) {  }
+
+ @media (max-width: 1400px) { 
+     .bg-pattern {
+         width: 300px;
+     }
+ }
+ @media (max-width: 992px) { 
+     .bg-pattern {
+         width: 100px;
+     }
+ }
+
+
+ /* X-Large devices (large desktops, 1200px and up) */
+ @media (max-width: 1200px) { 
+    .container {
+        width: 1000px;
+    }
+ }
+
+  /* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+
+    .container {
+        width: 768px;
+    }
+    header {
+        padding-top: 40px;
+    }
+    .header-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-heading  {
+        font-size: 32px;
+    }
+
+    .hero .row {
+        flex-direction: column-reverse;
+    }
+    .hero-image {
+        margin-bottom: 20px;
+    }
+    .hero .col-left {
+        text-align: center;
+    }
+
+    .about .row {
+        flex-direction: column;
+    }
+    .about .about-content {
+        padding-right: 0;
+    }
+    .about .col-right,
+    .about .col-left {
+        width: 100%;
+    }
+    .about .col-left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .about .about-card {
+        justify-content: center;
+    }
+
+    .testimonial-wrapper .row{
+        flex-wrap: wrap;
+    }
+    .testimonial-wrapper .testimonial {
+        min-width: 250px;
+        flex: 0.5;
+        margin-bottom: 60px;
+    }
+    .testimonial img {
+        top: -20%;
+    }
+    
+
+    .call-to-action h2 {
+        font-size: 25px;
+    }
+    
+
+    
+    
+}
+
+ /* Medium devices (tablets, 768px and up) */
+ @media (max-width: 768px) { 
+    .col-left, .col-right {
+        width: 100%;
+        padding: 20px;
+        margin: 20px;
+    }
+    .call-to-action .row {
+        flex-direction: column;
+    }
+    .call-to-action .col-left, .call-to-action .col-right {
+        width: 100%;
+        text-align: center;
+    }
+    .call-to-action .col-left {
+        margin-bottom: 30px;
+    }
+
+    .footer-wrapper .row {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .footer-wrapper .col {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-wrapper .col ul {
+        gap: 15px;
+    }
+    .footer-wrapper {}
+  }
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    .testimonial-wrapper .testimonial {
+        width: 100%;
+        flex: 1;
+        margin: 0 30px 60px;
+    }
+    
+ }
+
+
+
+
+
+
+
